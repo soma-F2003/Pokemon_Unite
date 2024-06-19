@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#filter-section,
+#vote-section {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#filter-section h2,
+#vote-section h2 {
+    margin-top: 0;
+}
+
+#vote-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#vote-form label,
+#vote-form select,
+#vote-form button {
+    margin-bottom: 10px;
+}
+
+#tier-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tier {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.tier h2 {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 0;
+}
+
+.tier ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tier ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.tier ul li:last-child {
+    border-bottom: none;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポケモンユナイト ティア表</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>ポケモンユナイト ティア表</h1>
+
+    <div id="controls">
+        <div id="filter-section">
+            <h2>期間フィルタ</h2>
+            <label for="filter-period">期間を選択:</label>
+            <select id="filter-period">
+                <option value="all">全て</option>
+                <option value="week">直近1週間</option>
+                <option value="month">直近1か月</option>
+            </select>
+            <button id="apply-filter">適用</button>
+        </div>
+
+        <div id="vote-section">
+            <h2>投票セクション</h2>
+            <form id="vote-form">
+                <label for="pokemon">ポケモンを選択:</label>
+                <select id="pokemon">
+                    <option value="ピカチュウ">ピカチュウ</option>
+                    <option value="リザードン">リザードン</option>
+                    <option value="フシギバナ">フシギバナ</option>
+		    <option value="カメックス">カメックス</option>
+                    <option value="シャンデラ">シャンデラ</option>
+                    <option value="ピクシー">ピクシー</option>
+                    <option value="アローラキュウコン">アローラキュウコン</option>
+                    <option value="プクリン">プクリン</option>
+                    <option value="カイリキー">カイリキー</option>
+                    <option value="ヤドラン">ヤドラン</option>
+                    <option value="ドードリオ">ドードリオ</option>
+                    <option value="ゲンガー">ゲンガー</option>
+                    <option value="バリヤード">バリヤード</option>
+                    <option value="ギャラドス">ギャラドス</option>
+                    <option value="ラプラス">ラプラス</option>
+                    <option value="カビゴン">カビゴン</option>
+                    <option value="カイリュー">カイリュー</option>
+                    <option value="メガミュウツーX">メガミュウツーX</option>
+                    <option value="メガミュウツーY">メガミュウツーY</option>
+                    <option value="ミュウ">ミュウ</option>
+                    <option value="マリルリ">マリルリ</option>
+                    <option value="エーフィ">エーフィ</option>
+                    <option value="ブラッキー">ブラッキー</option>
+                    <option value="ハッサム">ハッサム</option>
+                    <option value="ハピナス">ハピナス</option>
+                    <option value="バンギラス">バンギラス</option>
+                    <option value="バシャーモ">バシャーモ</option>
+                    <option value="サーナイト">サーナイト</option>
+                    <option value="ヤミラミ">ヤミラミ</option>
+                    <option value="アブソル">アブソル</option>
+                    <option value="メタグロス">メタグロス</option>
+                    <option value="ガブリアス">ガブリアス</option>
+                    <option value="ルカリオ">ルカリオ</option>
+                    <option value="リーフィア">リーフィア</option>
+                    <option value="グレイシア">グレイシア</option>
+                    <option value="マンムー">マンムー</option>
+                    <option value="イワパレス">イワパレス</option>
+                    <option value="ゾロアーク">ゾロアーク</option>
+                    <option value="マフォクシー">マフォクシー</option>
+                    <option value="ゲッコウガ">ゲッコウガ</option>
+                    <option value="ファイアロー">ファイアロー</option>
+                    <option value="ギルガルド">ギルガルド</option>
+                    <option value="ニンフィア">ニンフィア</option>
+                    <option value="ヌメルゴン">ヌメルゴン</option>
+                    <option value="オーロット">オーロット</option>
+                    <option value="フーパ">フーパ</option>
+                    <option value="ジュナイパー">ジュナイパー</option>
+                    <option value="アマージョ">アマージョ</option>
+                    <option value="キュワワー">キュワワー</option>
+                    <option value="ミミッキュ">ミミッキュ</option>
+                    <option value="マッシブーン">マッシブーン</option>
+                    <option value="ゼラオラ">ゼラオラ</option>
+                    <option value="エースバーン">エースバーン</option>
+                    <option value="インテレオン">インテレオン</option>
+                    <option value="ヨクバリス">ヨクバリス</option>
+                    <option value="ワタシラガ">ワタシラガ</option>
+                    <option value="ウッウ">ウッウ</option>
+                    <option value="タイレーツ">タイレーツ</option>
+                    <option value="ジュラルドン">ジュラルドン</option>
+                    <option value="ドラパルト">ドラパルト</option>
+                    <option value="ザシアン">ザシアン</option>
+                    <option value="ウーラオス">ウーラオス</option>
+                    <option value="マスカーニャ">マスカーニャ</option>
+                    <option value="ミライドン">ミライドン</option>
+                    <!-- 他のポケモンも追加 -->
+                </select>
+
+                <label for="tier">ティアを選択:</label>
+                <select id="tier">
+                    <option value="S">Sティア</option>
+                    <option value="A">Aティア</option>
+                    <option value="B">Bティア</option>
+                    <option value="C">Cティア</option>
+                    <option value="D">Dティア</option>
+                </select>
+
+                <button type="submit">投票</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="tier-list">
+        <div class="tier" id="S">
+            <h2>Sティア</h2>
+            <ul></ul>
+        </div>
+        <div class="tier" id="A">
+            <h2>Aティア</h2>
+            <ul></ul>
+        </div>
+        <div class="tier" id="B">
+            <h2>Bティア</h2>
+            <ul></ul>
+        </div>
+        <div class="tier" id="C">
+            <h2>Cティア</h2>
+            <ul></ul>
+        </div>
+        <div class="tier" id="D">
+            <h2>Dティア</h2>
+            <ul></ul>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
